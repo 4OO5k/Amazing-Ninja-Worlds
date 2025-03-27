@@ -14,8 +14,11 @@ public class LifeHUD : MonoBehaviour
         hearts = GameObject.FindGameObjectsWithTag("heart");
     }
 
-    public void HurtPlayer(){
+    public void HurtPlayer()
+    {
         Debug.Log("Ouch!");
+        lives -= 1;
+        hearts[lives].SetActive(false);
     }
 
     // Update is called once per frame

@@ -19,6 +19,10 @@ public class LifeHUD : MonoBehaviour
         Debug.Log("Ouch!");
         lives -= 1;
         hearts[lives].SetActive(false);
+        if (lives == 0) 
+        {
+            background.GetComponent<GameManager>().GameOver();
+        }
     }
 
     // Update is called once per frame

@@ -26,14 +26,6 @@ public class PickUpKey : MonoBehaviour
         //Debug.Log("Hit!");
     }
 
-    public void HealPlayer()
-    {
-        Debug.Log("Yay!");
-        if (lives < 3)
-        {
-            hearts[lives].SetActive(true);
-            lives += 1;
-        }
-    }
+
 
 }

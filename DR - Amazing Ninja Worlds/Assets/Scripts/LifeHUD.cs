@@ -14,6 +14,10 @@ public class LifeHUD : MonoBehaviour
         hearts = GameObject.FindGameObjectsWithTag("heart");
     }
 
+    public void HurtPlayer(){
+        Debug.Log("Ouch!");
+    }
+
     // Update is called once per frame
     void Update()
     {
